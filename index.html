@@ -15,7 +15,7 @@
         <div class="row align-items-center">
             <div class="col">(+880) 456 7811334</div>
             <div class="col text-end">
-                <a href="" class="btn btn-success btn-sm">LOGIN</a>
+                <a href="" class="btn btn-success btn-sm rounded-pill px-4" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Click to login">LOGIN</a>
             </div>
         </div>
     </section>
@@ -28,13 +28,14 @@
             <div class="col-5 col-lg-4">
                 <form class="input-group input-group-sm">
                     <input type="text"name="src" placeholder="Search" class="form-control">
-                    <button type="submit" class="btn btn-success">SUBMIT</button>
+                    <button type="submit" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
                 </form>
             </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded mt-2">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+            <div class="container-fluid">             
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -582,5 +583,34 @@
             </div>
         </div>
     </section>
+    <footer class="container-fluid bg-primary py-5">
+        <div class="row">
+            <div class="col-12 col-md-4 text-light">
+                <h5>IMPORTANT LINS</h5>
+                <div class="d-flex flex-column ">
+                    <a class="py-2 text-light" href="">About us</a>
+                    <a class="py-2 text-light" href="">Tracks Order</a>
+                    <a class="py-2 text-light" href="">Contact</a>
+                    <a class="py-2 text-light" href="">Support</a>
+                </div>
+            
+            </div>
+            <div class="col-12 col-md-4 text-light">
+                <h5>ADDRESS</h5>
+                <div class="">
+                   I AM A NEW PROGRAMER .PROGRAM IS MY PASSION.<br>
+                   YOU ARE VERY NICE BOY<br>
+                   SO I AM FINE
+                </div>
+            
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
 </body>
 </html>
